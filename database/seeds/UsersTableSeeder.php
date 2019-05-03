@@ -18,10 +18,10 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Admin One',
             'email' => 'admin@epivetdb.gov.np',
-            'password' => bcrypt('epivetDbPass12#$');
+            'password' => bcrypt('epivetDbPass12#$'),
             'role' => 'admin',
-            'created_time' => \Carbon\Carbon::now(),
-            'updated_time' => \Carbon\Carbon::now(),
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
         ]);
     }
 }
