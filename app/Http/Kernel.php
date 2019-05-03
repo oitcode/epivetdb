@@ -57,5 +57,12 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+	/* Added by developer after this. All of the above ones were added
+         * by Laravel installation out of the box.
+         */
+
+	/* Check if user is admin. */
+        'is_admin' => \App\Http\Middleware\IsAdmin::class,
     ];
 }
