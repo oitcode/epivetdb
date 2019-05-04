@@ -29,6 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
+		                  <img src="/nepal_logo.png" style="max-width: 50px; display: inline; margin-top: -10px;" />
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -69,6 +70,10 @@
                                 </ul>
                             </li>
                         @endguest
+                      <!-- Nepal flag -->
+                      <li>
+		                  <img src="/flag_1.jpeg" style="max-width: 30px; display: inline; margin-top: 10px;" />
+                      </li>
                     </ul>
                 </div>
             </div>
