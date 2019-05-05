@@ -17,7 +17,8 @@
                   <!-- Admin menu -->
                   <div>
                     <ul>
-                      <li><a href="">Create new user</a></li>
+                      <li><a href="/register">Create new user</a></li>
+                      <li><a href="">Change user password</a></li>
                       <li><a href="">Create new animal</a></li>
                       <li><a href="">Create new disease</a></li>
                       <li><a href="">Create new status</a></li>
