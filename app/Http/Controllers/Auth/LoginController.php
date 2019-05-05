@@ -36,4 +36,20 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    /**
+     * Redirect user after login.
+     *
+     * This method is used instead of $redirectTo variable.
+     */
+    public function redirectTo()
+    {
+        if (auth()->user()->role === 'admin') {
+            /* If the user is admin, redirect to admin page. */
+            return '/admin';
+        } else {
+            /* Redirect to home for non-admin users. */
+            return '/home';
+        }
+    }
 }
