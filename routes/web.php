@@ -30,4 +30,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin', 'Admin\AdminDashboardController@showAdminDashboard')
     ->name('admin');
 Route::get('/admin/listusers', 'Admin\UserController@listUsers');
+Route::get('/admin/changeupw', 'Admin\UserController@changeUserPw');
+Route::post('/admin/changeupw', 'Admin\UserController@changeUserPw');
 
