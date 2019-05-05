@@ -29,4 +29,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 */
 Route::get('/admin', 'Admin\AdminDashboardController@showAdminDashboard')
     ->name('admin');
+Route::get('/admin/listusers', 'Admin\UserController@listUsers');
 
