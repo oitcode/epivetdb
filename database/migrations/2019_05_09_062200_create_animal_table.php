@@ -44,6 +44,12 @@ class CreateAnimalTable extends Migration
      */
     public function down()
     {
+        /* Drop the foreign key constraint. */
+        Schema::table('animal', function (Blueprint $table) {
+            $table->dropForeign('fk_animal_user');
+        });
+
+        /* Drop table. */
         Schema::dropIfExists('animal');
     }
 }
