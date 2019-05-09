@@ -59,4 +59,17 @@ class StatusController extends Controller
 	      $request->session()->flash('status', 'Success: Status Created!');
         return redirect('/admin');
     }
+
+    /**
+     * List Statuses.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function listStatuses()
+    {
+        $statuses = Status::all();
+
+        return view('admin.list-statuses')
+            ->with('statuses', $statuses);
+    }
 }

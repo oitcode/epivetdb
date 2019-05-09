@@ -34,6 +34,7 @@
 
                     <ul>
                       <li><a href="/admin/status/create">Create new status</a></li>
+                      <li><a href="/admin/status/list">List statuses</a></li>
                     </ul>
                   </div>
                 </div>
