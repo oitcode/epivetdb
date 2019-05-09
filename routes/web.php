@@ -50,4 +50,5 @@ Route::get('/admin/disease/list', 'Admin\DiseaseController@listDiseases');
 
 /* Status */
 Route::get('/admin/status/create', 'Admin\StatusController@showStatusCreatePage');
+Route::post('/admin/status/create/process', 'Admin\StatusController@statusCreateProcess');
 
