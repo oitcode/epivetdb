@@ -1,0 +1,7 @@
+.text-left {
+  /**
+   * So that text-left will always have text on left.
+   *  No matter what!
+   */
+  text-align: left !important;
+}
