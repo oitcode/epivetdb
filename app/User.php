@@ -32,4 +32,24 @@ class User extends Authenticatable
     {
         return $this->role === 'admin';
     }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Relationship with other tables.
+    |--------------------------------------------------------------------------
+    |
+    | Basically one user will create many records for a given table. So, mostly
+    | user will have one-to-many relation with most of the tables.
+    |
+    */
+
+    /**
+     * 2nd arg: name of foreign key column in other table
+     * 3rd arg: name of primary key column in user table
+     */
+    public function animals()
+    {
+        return $this->hasMany('App\Animal', 'creator_id', 'id');
+    }
 }

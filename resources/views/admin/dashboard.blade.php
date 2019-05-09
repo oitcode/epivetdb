@@ -20,7 +20,14 @@
                       <li><a href="/admin/listusers">List users</a></li>
                       <li><a href="/register">Create new user</a></li>
                       <li><a href="/admin/changeupw">Change user password</a></li>
-                      <li><a href="">Create new animal</a></li>
+                    </ul>
+
+                    <ul>
+                      <li><a href="/admin/animal/create">Create new animal</a></li>
+                      <li><a href="">List animals</a></li>
+                    </ul> 
+
+                    <ul> 
                       <li><a href="">Create new disease</a></li>
                       <li><a href="">Create new status</a></li>
                     </ul>
