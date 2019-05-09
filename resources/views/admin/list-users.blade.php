@@ -15,7 +15,7 @@
                     @endif
 
                   <!-- Show user list -->
-                  <div>
+                  <div class="table-responsive">
                     <table class="table table-condensed table-bordered table-striped">
                       <thead>
                         <tr>
