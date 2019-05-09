@@ -57,4 +57,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Disease', 'creator_id', 'id');
     }
+
+    public function statuses()
+    {
+        return $this->hasMany('App\Status', 'creator_id', 'id');
+    }
 }
