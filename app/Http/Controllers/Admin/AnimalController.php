@@ -61,4 +61,17 @@ class AnimalController extends Controller
 	      $request->session()->flash('status', 'Success: Animal Created!');
         return redirect('/admin');
     }
+
+    /**
+     * List animals.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function listAnimals()
+    {
+        $animals = Animal::all();
+
+        return view('admin.list-animals')
+            ->with('animals', $animals);
+    }
 }

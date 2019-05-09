@@ -41,3 +41,4 @@ Route::post('/admin/changeupw', 'Admin\UserController@changeUserPw');
 /* Animal */
 Route::get('/admin/animal/create', 'Admin\AnimalController@showAnimalCreatePage');
 Route::post('/admin/animal/create/process', 'Admin\AnimalController@animalCreateProcess');
+Route::get('/admin/animal/list', 'Admin\AnimalController@listAnimals');

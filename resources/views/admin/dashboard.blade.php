@@ -24,7 +24,7 @@
 
                     <ul>
                       <li><a href="/admin/animal/create">Create new animal</a></li>
-                      <li><a href="">List animals</a></li>
+                      <li><a href="/admin/animal/list">List animals</a></li>
                     </ul> 
 
                     <ul> 
