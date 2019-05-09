@@ -27,8 +27,8 @@
                         @if(count($statuses) > 0)
                           @foreach ($statuses as $status)
                             <tr>
-                              <td>{{ $status->name }}</td>
-                              <td>{{ $status->comment }}</td>
+                              <td class="success">{{ $status->name }}</td>
+                              <td class="info">{{ $status->comment }}</td>
                             </tr>
                           @endforeach
                         @endif
