@@ -29,7 +29,7 @@ class CreateDiseaseTable extends Migration
             $table->string('comment', 255)->nullable();
         });
 
-        Schema::table('animal', function (Blueprint $table) {
+        Schema::table('disease', function (Blueprint $table) {
             /* Add foreign key to user table. */
             $table->foreign('creator_id', 'fk_disease_user')
                 ->references('id')
@@ -44,6 +44,12 @@ class CreateDiseaseTable extends Migration
      */
     public function down()
     {
+        /* Drop the foreign key constraint. */
+        Schema::table('disease', function (Blueprint $table) {
+            $table->dropForeign('fk_disease_user');
+        });
+
+        /* Drop the table. */
         Schema::dropIfExists('disease');
     }
 }

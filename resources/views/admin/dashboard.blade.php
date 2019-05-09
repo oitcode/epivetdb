@@ -28,7 +28,7 @@
                     </ul> 
 
                     <ul> 
-                      <li><a href="">Create new disease</a></li>
+                      <li><a href="/admin/disease/create">Create new disease</a></li>
                       <li><a href="">Create new status</a></li>
                     </ul>
                   </div>
