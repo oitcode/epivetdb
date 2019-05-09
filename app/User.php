@@ -52,4 +52,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Animal', 'creator_id', 'id');
     }
+
+    public function diseases()
+    {
+        return $this->hasMany('App\Disease', 'creator_id', 'id');
+    }
 }
