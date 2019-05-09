@@ -33,7 +33,7 @@
                     </ul>
 
                     <ul>
-                      <li><a href="">Create new status</a></li>
+                      <li><a href="/admin/status/create">Create new status</a></li>
                     </ul>
                   </div>
                 </div>
