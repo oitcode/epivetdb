@@ -62,4 +62,16 @@ class DiseaseController extends Controller
         return redirect('/admin');
     }
 
+    /**
+     * List diseases.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function listDiseases()
+    {
+        $diseases = Disease::all();
+
+        return view('admin.list-diseases')
+            ->with('diseases', $diseases);
+    }
 }

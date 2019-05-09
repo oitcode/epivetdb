@@ -46,4 +46,4 @@ Route::get('/admin/animal/list', 'Admin\AnimalController@listAnimals');
 /* Disease */
 Route::get('/admin/disease/create', 'Admin\DiseaseController@showDiseaseCreatePage');
 Route::post('/admin/disease/create/process', 'Admin\DiseaseController@diseaseCreateProcess');
-// Route::get('/admin/animal/list', 'Admin\AnimalController@listAnimals');
+Route::get('/admin/disease/list', 'Admin\DiseaseController@listDiseases');
