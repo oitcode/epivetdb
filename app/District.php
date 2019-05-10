@@ -34,4 +34,22 @@ class District extends Model
          */
         return $this->belongsTo('App\State', 'state_id', 'state_id');
     }
+
+    /*
+    |--------------------------------------------------------------------------
+    | Relationship with local_body table.
+    |--------------------------------------------------------------------------
+    |
+    | Has one-to-many relation with local_body table.
+    |
+    */
+
+    /**
+     * 2nd arg: name of foreign key column in local_body table
+     * 3rd arg: name of primary key column in district table
+     */
+    public function local_bodies()
+    {
+        return $this->hasMany('App\LocalBody', 'district_id', 'district_id');
+    }
 }
