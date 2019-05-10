@@ -53,3 +53,6 @@ Route::get('/admin/status/create', 'Admin\StatusController@showStatusCreatePage'
 Route::post('/admin/status/create/process', 'Admin\StatusController@statusCreateProcess');
 Route::get('/admin/status/list', 'Admin\StatusController@listStatuses');
 
+/* Address */
+Route::get('/admin/address/input', 'Admin\AddressController@showAddressForm');
+Route::post('/admin/address/input/process', 'Admin\AddressController@inputAddressProcess');

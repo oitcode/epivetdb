@@ -67,6 +67,9 @@
                     <button type="button" class="btn btn-default text-left">
                       <a href="/admin/changeupw">Change user password</a>
                     </button>
+                    <button type="button" class="btn btn-default text-left">
+                      <a href="/admin/address/input">Address</a>
+                    </button>
                   
 
                   </div>
