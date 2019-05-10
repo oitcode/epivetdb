@@ -14,7 +14,7 @@ class Animal extends Model
     protected $table = 'animal';
 
     /* Primary key */
-    protected $primayKey = 'animal_id';
+    protected $primaryKey = 'animal_id';
 
 
     /*

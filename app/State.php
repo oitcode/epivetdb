@@ -14,7 +14,7 @@ class State extends Model
     protected $table = 'state';
 
     /* Primary key */
-    protected $primayKey = 'state_id';
+    protected $primaryKey = 'state_id';
 
 
     /*

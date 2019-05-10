@@ -14,7 +14,7 @@ class Status extends Model
     protected $table = 'status';
 
     /* Primary key */
-    protected $primayKey = 'status_id';
+    protected $primaryKey = 'status_id';
 
 
     /*

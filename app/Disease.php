@@ -14,7 +14,7 @@ class Disease extends Model
     protected $table = 'disease';
 
     /* Primary key */
-    protected $primayKey = 'disease_id';
+    protected $primaryKey = 'disease_id';
 
 
     /*

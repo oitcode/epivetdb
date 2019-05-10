@@ -14,7 +14,7 @@ class LocalBody extends Model
     protected $table = 'local_body';
 
     /* Primary key */
-    protected $primayKey = 'local_body_id';
+    protected $primaryKey = 'local_body_id';
 
 
     /*

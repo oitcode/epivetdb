@@ -14,7 +14,7 @@ class District extends Model
     protected $table = 'district';
 
     /* Primary key */
-    protected $primayKey = 'district_id';
+    protected $primaryKey = 'district_id';
 
 
     /*
