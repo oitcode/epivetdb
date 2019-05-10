@@ -59,7 +59,7 @@ class AnimalController extends Controller
 
         /* Flash success message and redirect. */
 	      $request->session()->flash('status', 'Success: Animal Created!');
-        return redirect('/admin');
+        return redirect('/admin/animal/create');
     }
 
     /**

@@ -40,7 +40,7 @@
                         <textarea class="form-control" rows="3" id="animal_comment" name="animal_comment" placeholder="Animal Comment">
                         </textarea>
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary">Save</button>
                     </form>
                   </div>
 

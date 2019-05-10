@@ -32,7 +32,7 @@
                         <textarea class="form-control" rows="3" id="status_comment" name="status_comment" placeholder="Status Comment">
                         </textarea>
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary">Save</button>
                     </form>
                   </div>
 
