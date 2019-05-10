@@ -15,4 +15,23 @@ class State extends Model
 
     /* Primary key */
     protected $primayKey = 'state_id';
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Relationship with district table.
+    |--------------------------------------------------------------------------
+    |
+    | Has one-to-many relation with district table.
+    |
+    */
+
+    /**
+     * 2nd arg: name of foreign key column in district table
+     * 3rd arg: name of primary key column in state table
+     */
+    public function districts()
+    {
+        return $this->hasMany('App\District', 'state_id', 'state_id');
+    }
 }
