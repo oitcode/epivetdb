@@ -10,6 +10,11 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
 
+/* Use related models. */
+use App\State;
+use App\District;
+use App\LocalBody;
+
 class RegisterController extends Controller
 {
     /*
@@ -44,6 +49,24 @@ class RegisterController extends Controller
 
         /* Allow only for admin.*/
         $this->middleware('is_admin');
+    }
+
+    /**
+     * Show the application registration form.
+     *
+     * Overriding the method in laravel core! Here we pass
+     * additional address details to our view.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showRegistrationForm()
+    {
+        $states = State::all();
+        $districts = District::all();
+
+        return view('auth.register')
+            ->with('states', $states)
+            ->with('districts', $districts);
     }
 
     /**
