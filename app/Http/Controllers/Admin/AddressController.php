@@ -48,9 +48,12 @@ class AddressController extends Controller
      */
     public function inputAddressProcess(Request $request)
     {
-        echo "State " . $request->input('state_name') . "<br />";
-        echo "District " . $request->input('district_name') . "<br />";
-        echo "Body " . $request->input('local_body_name') . "<br />";
+        $state = State::find($request->input('state_name'));
+        $district = District::find($request->input('district_name'));
+        $localBody = LocalBody::find($request->input('local_body_name'));
+        echo "State " . $state->name . "<br />";
+        echo "District " . $district->name . "<br />";
+        echo "Body " . $localBody->name . "<br />";
 
         die();
     }
