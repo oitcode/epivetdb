@@ -34,9 +34,9 @@
                               <td>{{ $user->name }}</td>
                               <td>{{ $user->email }}</td>
                               <td>{{ $user->role }}</td>
-                              <td>{{ $user->state }}</td>
-                              <td>{{ $user->district }}</td>
-                              <td>{{ $user->city }}</td>
+                              <td>{{ $user->local_body->district->state->name }}</td>
+                              <td>{{ $user->local_body->district->name }}</td>
+                              <td>{{ $user->local_body->name }}</td>
                             </tr>
                           @endforeach
                         @endif

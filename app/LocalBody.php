@@ -34,4 +34,10 @@ class LocalBody extends Model
          */
         return $this->belongsTo('App\District', 'district_id', 'district_id');
     }
+
+    /* A local body has many users. */
+    public function users()
+    {
+        return $this->hasMany('App\User', 'local_body_id', 'local_body_id');
+    }
 }

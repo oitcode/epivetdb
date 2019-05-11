@@ -92,10 +92,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $localBody = LocalBody::find($data['local_body_name']);
+
+        /* Todo: Error when local body not found. */
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'local_body_id' => $localBody->local_body_id,
         ]);
     }
 

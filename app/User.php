@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'local_body_id',
     ];
 
     /**
@@ -61,5 +61,11 @@ class User extends Authenticatable
     public function statuses()
     {
         return $this->hasMany('App\Status', 'creator_id', 'id');
+    }
+
+    /* User belongs to a local body. */
+    public function local_body()
+    {
+        return $this->belongsTo('App\LocalBody', 'local_body_id', 'local_body_id');
     }
 }
