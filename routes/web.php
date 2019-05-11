@@ -37,6 +37,8 @@ Route::get('/admin', 'Admin\AdminDashboardController@showAdminDashboard')
 Route::get('/admin/listusers', 'Admin\UserController@listUsers');
 Route::get('/admin/changeupw', 'Admin\UserController@changeUserPw');
 Route::post('/admin/changeupw', 'Admin\UserController@changeUserPw');
+Route::get('/admin/users/filter', 'Admin\UserController@filterUsers');
+Route::post('/admin/users/filter', 'Admin\UserController@filterUsers');
 
 /* Animal */
 Route::get('/admin/animal/create', 'Admin\AnimalController@showAnimalCreatePage');
@@ -56,3 +58,4 @@ Route::get('/admin/status/list', 'Admin\StatusController@listStatuses');
 /* Address */
 Route::get('/admin/address/input', 'Admin\AddressController@showAddressForm');
 Route::post('/admin/address/input/process', 'Admin\AddressController@inputAddressProcess');
+
