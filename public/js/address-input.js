@@ -14,16 +14,22 @@ function hideDistrictAndLb()
     });
 }
 
-/* Unselect all district options. */
-function unselectAllDistricts()
+/* Disable all district options. */
+function disableAllDistricts()
 {
-    ; 
+    /* Disable all district dropdowns.*/
+    $("select[id^='district_list_']").each(function() {
+        $(this).prop('disabled', true);
+    });
 }
 
-/* Unselect all local body options. */
-function unselectAllLb()
+/* Disable all local body options. */
+function disableAllLb()
 {
-    ;
+    /* Disable all local body dropdowns.*/
+    $("select[id^='lb_list_']").each(function() {
+        $(this).prop('disabled', true);
+    });
 }
 
 $( document ).ready(function() {
@@ -32,12 +38,16 @@ $( document ).ready(function() {
 
     /* When state is selected. */
     $("#state_name").change(function() {
+        /* Hide all district and local body dropdowns. */
         hideDistrictAndLb();
-        // unselectAllDistricts();
-        // unselectAllLb();
 
-        /* Show the one that is needed. */
+        /* Disable all district and local body selects. */
+        disableAllDistricts();
+        disableAllLb();
+
+        /* Enable, deselect, and show the one that is needed. */
         listName = '#district_list_' + $("#state_name").val();
+        $(listName).prop('disabled', false);
         $(listName + " option:selected").prop('selected', false);
         $(listName).show();
     });
@@ -48,10 +58,11 @@ $( document ).ready(function() {
         $("select[id^='lb_list_']").each(function() {
             $(this).hide();
         });
-        unselectAllLb();
+        disableAllLb();
 
-        /* Show the one that is needed. */
+        /* Enable, deselect, and show the one that is needed. */
         listName = '#lb_list_' + $(this).val();
+        $(listName).prop('disabled', false);
         $(listName + " option:selected").prop('selected', false);
         $(listName).show();
     });
