@@ -38,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                      <li class="@yield('hl_t_home')"><a href="/home">Home <span class="sr-only">(current)</span></a></li>
+                      <li class="@yield('hl_t_home')"><a href="/dashboard">Dashboard <span class="sr-only">(current)</span></a></li>
                       <li class="@yield('hl_t_home')"><a href="">Form</a></li>
                       <li class="@yield('hl_t_home')"><a href="">Report</a></li>
                       @if (!Auth::guest() && Auth::user()->role == 'admin')

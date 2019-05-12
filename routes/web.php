@@ -59,3 +59,16 @@ Route::get('/admin/status/list', 'Admin\StatusController@listStatuses');
 Route::get('/admin/address/input', 'Admin\AddressController@showAddressForm');
 Route::post('/admin/address/input/process', 'Admin\AddressController@inputAddressProcess');
 
+/*
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+| Operator Routes
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|
+| Here is where you can register web routes for operator accessible pages.
+|
+*/
+
+
+/* Dashboard */
+Route::get('/dashboard', 'Operator\OperatorDashboardController@showOperatorDashboard');
+Route::get('/operator/form', 'Operator\FormController@showFormPage');
