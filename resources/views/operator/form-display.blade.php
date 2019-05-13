@@ -20,13 +20,13 @@
 
                   <!-- Show input form -->
                   <div>
-                    <form class="form-horizontal" action="" method="post">
+                    <form class="form-horizontal" action="/operator/form/process" method="post">
                     {{ csrf_field() }}
                       <!-- Date -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Date</label>
+                        <label class="col-md-4 control-label" for="date">Date</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="date" name="date" placeholder="">
                         </div>
                       </div>
 
@@ -88,9 +88,9 @@
 
                       <!-- Disease -->
                       <div class="form-group">
-                        <label for="" class="col-md-4 control-label">Disease</label>
+                        <label for="disease_id" class="col-md-4 control-label">Disease</label>
                         <div class="col-md-6">
-                          <select class="form-control" id="" name="">
+                          <select class="form-control" id="disease_id" name="disease_id">
                             <option value="">
                               --
                             </option>
@@ -106,9 +106,9 @@
 
                       <!-- Species -->
                       <div class="form-group">
-                        <label for="" class="col-md-4 control-label">Species</label>
+                        <label for="animal_id" class="col-md-4 control-label">Species</label>
                         <div class="col-md-6">
-                          <select class="form-control" id="" name="">
+                          <select class="form-control" id="animal_id" name="animal_id">
                             <option value="">
                               --
                             </option>
@@ -124,82 +124,82 @@
 
                       <!-- Num of outbreaks -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Number of outbreaks</label>
+                        <label class="col-md-4 control-label" for="num_of_outbreaks">Number of outbreaks</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="num_of_outbreaks" name="num_of_outbreaks" placeholder="">
                         </div>
                       </div>
 
                       <!-- Num of susceptible -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Number of susceptible</label>
+                        <label class="col-md-4 control-label" for="num_of_susceptible">Number of susceptible</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="num_of_susceptible" name="num_of_susceptible" placeholder="">
                         </div>
                       </div>
 
                       <!-- Num of affected -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Number of affected</label>
+                        <label class="col-md-4 control-label" for="num_of_affected">Number of affected</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="num_of_affected" name="num_of_affected" placeholder="">
                         </div>
                       </div>
 
                       <!-- Num of dead -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Number of dead</label>
+                        <label class="col-md-4 control-label" for="num_of_dead">Number of dead</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="num_of_dead" name="num_of_dead" placeholder="">
                         </div>
                       </div>
 
                       <!-- Num of vaccinated -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Number of vaccinated</label>
+                        <label class="col-md-4 control-label" for="num_of_vaccinated">Number of vaccinated</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="num_of_vaccinated" name="num_of_vaccinated" placeholder="">
                         </div>
                       </div>
 
                       <!-- Num of treated -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Number of treated</label>
+                        <label class="col-md-4 control-label" for="num_of_treated">Number of treated</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="num_of_treated" name="num_of_treated" placeholder="">
                         </div>
                       </div>
 
                       <!-- Reg Vacc -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Reg Vacc</label>
+                        <label class="col-md-4 control-label" for="reg_vacc">Reg Vacc</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="reg_vacc" name="reg_vacc" placeholder="">
                         </div>
                       </div>
 
                       <!-- Outbreak Res Vacc -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Outbreak Res Vacc</label>
+                        <label class="col-md-4 control-label" for="outbreak_res_vacc">Outbreak Res Vacc</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="outbreak_res_vacc" name="outbreak_res_vacc" placeholder="">
                         </div>
                       </div>
 
                       <!-- Destroyed -->
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="">Destroyed</label>
+                        <label class="col-md-4 control-label" for="destroyed">Destroyed</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="" name="" placeholder="">
+                          <input type="text" class="form-control" id="destroyed" name="destroyed" placeholder="">
                         </div>
                       </div>
 
 
 
                       <div class="form-group">
-                        <label class="col-md-4 control-label" for="status_comment">Comment</label>
+                        <label class="col-md-4 control-label" for="comment">Comment</label>
                         <div class="col-md-6">
-                          <textarea class="form-control" rows="3" id="status_comment" name="status_comment" placeholder="Status Comment">
+                          <textarea class="form-control" rows="3" id="comment" name="comment" placeholder="Status Comment">
                           </textarea>
                         </div>
                       </div>

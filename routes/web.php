@@ -71,4 +71,7 @@ Route::post('/admin/address/input/process', 'Admin\AddressController@inputAddres
 
 /* Dashboard */
 Route::get('/dashboard', 'Operator\OperatorDashboardController@showOperatorDashboard');
+
+/* Disease report form */
 Route::get('/operator/form', 'Operator\FormController@showFormPage');
+Route::post('/operator/form/process', 'Operator\FormController@processReportForm');
