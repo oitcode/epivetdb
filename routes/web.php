@@ -59,6 +59,10 @@ Route::get('/admin/status/list', 'Admin\StatusController@listStatuses');
 Route::get('/admin/address/input', 'Admin\AddressController@showAddressForm');
 Route::post('/admin/address/input/process', 'Admin\AddressController@inputAddressProcess');
 
+/* Report */
+Route::get('/admin/report/show', 'Admin\ReportController@showReportPage');
+Route::post('/admin/report/show', 'Admin\ReportController@showReportPage');
+
 /*
 |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 | Operator Routes

@@ -34,4 +34,10 @@ class Disease extends Model
          */
         return $this->belongsTo('App\User', 'creator_id', 'id');
     }
+
+    /* A disease body has many disease reports. */
+    public function disease_reports()
+    {
+        return $this->hasMany('App\DiseaseReport', 'disease_id', 'disease_id');
+    }
 }

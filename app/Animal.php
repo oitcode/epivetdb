@@ -34,4 +34,10 @@ class Animal extends Model
          */
         return $this->belongsTo('App\User', 'creator_id', 'id');
     }
+
+    /* A animal (species) body has many disease reports. */
+    public function disease_reports()
+    {
+        return $this->hasMany('App\DiseaseReport', 'animal_id', 'animal_id');
+    }
 }

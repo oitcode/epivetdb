@@ -40,7 +40,7 @@
                     <ul class="nav navbar-nav">
                       <li class="@yield('hl_t_home')"><a href="/dashboard">Dashboard <span class="sr-only">(current)</span></a></li>
                       <li class="@yield('hl_t_home')"><a href="">Form</a></li>
-                      <li class="@yield('hl_t_home')"><a href="">Report</a></li>
+                      <li class="@yield('hl_t_home')"><a href="/admin/report/show">Report</a></li>
                       @if (!Auth::guest() && Auth::user()->role == 'admin')
                         <li class="@yield('hl_t_home')"><a href="/admin">Admin</a></li>
                       @endif

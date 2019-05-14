@@ -40,4 +40,10 @@ class LocalBody extends Model
     {
         return $this->hasMany('App\User', 'local_body_id', 'local_body_id');
     }
+
+    /* A local body has many disease reports. */
+    public function disease_reports()
+    {
+        return $this->hasMany('App\DiseaseReport', 'local_body_id', 'local_body_id');
+    }
 }
