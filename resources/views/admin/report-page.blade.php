@@ -1,9 +1,9 @@
-@extends('admin.dashboard')
+@extends('layouts.app')
 
-@section('main_screen')
-<div class="container">
+@section('content')
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                   <strong>Report Filter
@@ -126,6 +126,14 @@
                           <th>Species</th>
                           <th>Disease</th>
                           <th>Num of outbreaks</th>
+                          <th>Num of susceptible</th>
+                          <th>Num of affected</th>
+                          <th>Num of dead</th>
+                          <th>Num of vaccinated</th>
+                          <th>Num of treated</th>
+                          <th>Reg Vacc</th>
+                          <th>Outbreak Res Vacc</th>
+                          <th>Destroyed</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -140,6 +148,14 @@
                                 <td>{{ $report->animal->name }}</td>
                                 <td>{{ $report->disease->name }}</td>
                                 <td>{{ $report->num_of_outbreaks }}</td>
+                                <td>{{ $report->num_of_susceptible }}</td>
+                                <td>{{ $report->num_of_affected }}</td>
+                                <td>{{ $report->num_of_dead }}</td>
+                                <td>{{ $report->num_of_vaccinated }}</td>
+                                <td>{{ $report->num_of_treated }}</td>
+                                <td>{{ $report->reg_vacc }}</td>
+                                <td>{{ $report->outbreak_res_vacc }}</td>
+                                <td>{{ $report->destroyed }}</td>
                               </tr>
                             @endforeach
                           @endif
