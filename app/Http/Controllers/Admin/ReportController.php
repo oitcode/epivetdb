@@ -53,7 +53,20 @@ class ReportController extends Controller
         } else if ($request->isMethod('post')) {
             /* Todo: Validate input. */
 
-            $reports = DiseaseReport::where('disease_id', $request->input('disease_id'))->get();
+            /**
+             * Get reports based on user search input.
+             */
+
+            $reports = DiseaseReport::all();
+            if ($request->input('local_body_name')) {
+                $reports = $reports->where('local_body_id', $request->input('local_body_name'));
+            }
+            if ($request->input('animal_id')) {
+                $reports = $reports->where('animal_id', $request->input('animal_id'));
+            }
+            if ($request->input('disease_id')) {
+                $reports = $reports->where('disease_id', $request->input('disease_id'));
+            }
 
             return view('admin.report-page')
                 ->with('states', $states)
