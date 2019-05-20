@@ -16,6 +16,12 @@
 </head>
 <body>
     <div id="app">
+        <div class="page-header container-fluid bg-primary nb-mg0">
+          <div class="container">
+            <h1 class="nb-smh1 text-center">National Veterinary Disease Reporting System</h1>
+          </div>
+        </div>
+
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -38,21 +44,16 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                      <li class="@yield('hl_t_home')"><a href="/dashboard">Dashboard <span class="sr-only">(current)</span></a></li>
-                      <li class="@yield('hl_t_home')"><a href="">Form</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Form <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="/operator/form">Create</a></li>
+                        </ul> 
+                      </li>
                       <li class="@yield('hl_t_home')"><a href="/admin/report/show">Report</a></li>
                       @if (!Auth::guest() && Auth::user()->role == 'admin')
                         <li class="@yield('hl_t_home')"><a href="/admin">Admin</a></li>
                       @endif
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Support</a></li>
-                          <li><a href="#">FAQ</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Tutorials</a></li>
-                        </ul> 
-                      </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

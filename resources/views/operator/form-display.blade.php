@@ -1,6 +1,6 @@
-@extends('operator.dashboard')
+@extends('layouts.app')
 
-@section('main_screen')
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8">
