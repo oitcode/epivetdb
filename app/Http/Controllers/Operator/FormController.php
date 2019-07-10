@@ -57,6 +57,21 @@ class FormController extends Controller
     public function processReportForm(Request $request)
     {
         /* Todo: Validate input. */
+        $validatedData = $request->validate([
+            'date' => 'required|date',
+            'local_body_name' => 'required',
+            'disease_id' => 'required|integer',
+            'animal_id' => 'required|integer',
+            'num_of_outbreaks' => 'required|integer|min:0',
+            'num_of_susceptible' => 'required|integer|min:0',
+            'num_of_affected' => 'required|integer|min:0',
+            'num_of_dead' => 'required|integer|min:0',
+            'num_of_vaccinated' => 'required|integer|min:0',
+            'num_of_treated' => 'required|integer|min:0',
+            'reg_vacc' => 'required|integer|min:0',
+            'outbreak_res_vacc' => 'required|integer|min:0',
+            'destroyed' => 'required|integer|min:0',
+        ]);
 
         $diseaseReport = new DiseaseReport;
 
