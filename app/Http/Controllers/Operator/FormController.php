@@ -41,12 +41,17 @@ class FormController extends Controller
         $animals = Animal::all();
         $diseases = Disease::all();
 
+        /* Recent report submissions */
+        $recentReports = DiseaseReport::where('creator_id', auth()->user()->id)
+                         ->take(5)
+                         ->get();
+
         return view('operator.form-display')
             ->with('states', $states)
             ->with('districts', $districts)
             ->with('animals', $animals)
-            ->with('diseases', $diseases);
-
+            ->with('diseases', $diseases)
+            ->with('recentReports', $recentReports);
     }
 
     /**
