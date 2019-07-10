@@ -126,7 +126,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="num_of_outbreaks">Number of outbreaks</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="num_of_outbreaks" name="num_of_outbreaks" placeholder="">
+                          <input type="text" class="form-control" id="num_of_outbreaks" name="num_of_outbreaks" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -134,7 +134,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="num_of_susceptible">Number of susceptible</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="num_of_susceptible" name="num_of_susceptible" placeholder="">
+                          <input type="text" class="form-control" id="num_of_susceptible" name="num_of_susceptible" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -142,7 +142,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="num_of_affected">Number of affected</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="num_of_affected" name="num_of_affected" placeholder="">
+                          <input type="text" class="form-control" id="num_of_affected" name="num_of_affected" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -150,7 +150,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="num_of_dead">Number of dead</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="num_of_dead" name="num_of_dead" placeholder="">
+                          <input type="text" class="form-control" id="num_of_dead" name="num_of_dead" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -158,7 +158,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="num_of_vaccinated">Number of vaccinated</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="num_of_vaccinated" name="num_of_vaccinated" placeholder="">
+                          <input type="text" class="form-control" id="num_of_vaccinated" name="num_of_vaccinated" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -166,7 +166,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="num_of_treated">Number of treated</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="num_of_treated" name="num_of_treated" placeholder="">
+                          <input type="text" class="form-control" id="num_of_treated" name="num_of_treated" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -174,7 +174,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="reg_vacc">Reg Vacc</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="reg_vacc" name="reg_vacc" placeholder="">
+                          <input type="text" class="form-control" id="reg_vacc" name="reg_vacc" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -182,7 +182,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="outbreak_res_vacc">Outbreak Res Vacc</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="outbreak_res_vacc" name="outbreak_res_vacc" placeholder="">
+                          <input type="text" class="form-control" id="outbreak_res_vacc" name="outbreak_res_vacc" placeholder="" value="0">
                         </div>
                       </div>
 
@@ -190,7 +190,7 @@
                       <div class="form-group">
                         <label class="col-md-4 control-label" for="destroyed">Destroyed</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control" id="destroyed" name="destroyed" placeholder="">
+                          <input type="text" class="form-control" id="destroyed" name="destroyed" placeholder="" value="0">
                         </div>
                       </div>
 
