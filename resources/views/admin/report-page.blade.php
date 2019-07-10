@@ -160,6 +160,58 @@
                             @endforeach
                           @endif
                         @endisset
+                        <tr>
+                          <td colspan="6">
+                            <strong>
+                              Total
+                            <strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalNumOfOutbreaks' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalNumOfSusceptible' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalNumOfAffected' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalNumOfDead' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalNumOfVaccinated' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalNumOfTreated' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalRegVacc' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalOutbreakResVacc' ]}}
+                            </strong>
+                          </td>
+                          <td>
+                            <strong>
+                              {{ $total['totalDestroyed' ]}}
+                            </strong>
+                          </td>
+                        </tr>
                       </tbody>
                       <tfoot>
                       </tfoot>
