@@ -58,6 +58,17 @@ class ReportController extends Controller
              */
 
             $reports = DiseaseReport::all();
+
+            if ($request->input('start_date')) {
+                $reports = $reports->where(
+                        'date', ">", $request->input('start_date')
+                    );
+            }
+            if ($request->input('end_date')) {
+                $reports = $reports->where(
+                        'date', "<", $request->input('end_date')
+                    );
+            }
             if ($request->input('local_body_name')) {
                 $reports = $reports->where('local_body_id', $request->input('local_body_name'));
             }

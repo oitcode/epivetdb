@@ -23,8 +23,14 @@
                     <div class="row">
                       <div class="col-md-2">
                         <div class="form-group">
-                          <label>Date</label><br />
-                          <input class="form-control" type="text" name="date">
+                          <label>Start Date</label><br />
+                          <input class="form-control" type="date" name="start_date">
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label>End Date</label><br />
+                          <input class="form-control" type="date" name="end_date">
                         </div>
                       </div>
                       <div class="col-md-2">
@@ -111,6 +117,7 @@
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="submit" class="btn btn-primary pull-right">All Report</button>
                   </form>
 
                   <hr />
@@ -158,60 +165,60 @@
                                 <td>{{ $report->destroyed }}</td>
                               </tr>
                             @endforeach
+                            <tr>
+                              <td colspan="6">
+                                <strong>
+                                  Total
+                                <strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalNumOfOutbreaks' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalNumOfSusceptible' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalNumOfAffected' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalNumOfDead' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalNumOfVaccinated' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalNumOfTreated' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalRegVacc' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalOutbreakResVacc' ]}}
+                                </strong>
+                              </td>
+                              <td>
+                                <strong>
+                                  {{ $total['totalDestroyed' ]}}
+                                </strong>
+                              </td>
+                            </tr>
                           @endif
                         @endisset
-                        <tr>
-                          <td colspan="6">
-                            <strong>
-                              Total
-                            <strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalNumOfOutbreaks' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalNumOfSusceptible' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalNumOfAffected' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalNumOfDead' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalNumOfVaccinated' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalNumOfTreated' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalRegVacc' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalOutbreakResVacc' ]}}
-                            </strong>
-                          </td>
-                          <td>
-                            <strong>
-                              {{ $total['totalDestroyed' ]}}
-                            </strong>
-                          </td>
-                        </tr>
                       </tbody>
                       <tfoot>
                       </tfoot>
