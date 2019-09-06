@@ -46,6 +46,7 @@
             <th>Date</th>
             <th>Local Body</th>
             <th>Submitted by</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -61,6 +62,11 @@
               </td>
               <td>
                 {{ $recentReport->creator->name }}
+              </td>
+              <td>
+                <a href="">Delete</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/admin/report/edit/{{ $recentReport->disease_report_id }}">Edit</a>
               </td>
             </tr>
           @endforeach

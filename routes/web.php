@@ -62,6 +62,8 @@ Route::post('/admin/address/input/process', 'Admin\AddressController@inputAddres
 /* Report */
 Route::get('/admin/report/show', 'Admin\ReportController@showReportPage');
 Route::post('/admin/report/show', 'Admin\ReportController@showReportPage');
+Route::get('/admin/report/edit/{reportId}', 'Admin\FormEditController@displayFormForEdit');
+Route::post('/admin/report/edit/process', 'Admin\FormEditController@processEditedForm');
 
 /*
 |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
